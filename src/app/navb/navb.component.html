@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      
+            <div class="navbar-header">
+                <a class ="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSusH7SXHDYY58cfCHO5m5Gv6YN_JzTMxfegqAChYEsGMIx8doJ&s" class="img-responsive logo"></a>
+                    <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
+                      <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+                    </button>
+                    
+                    <a routerLink="/" class="navbar-brand rt">Saksham(Company Header)</a>
+                  </div>
+                  <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
+
+
+
+
+
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#"> Home </a></li>
+          <li><a href="/state"> State </a></li>
+          <li><a href="#"> District     </a></li>
+          <li><a href="#">child</a></li>
+          <li><a href="#">Logout</a></li>
+        
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" role="button">  <span class=" "></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Save Data</a></li>
+              <li><a href="#">Fetch Data</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
